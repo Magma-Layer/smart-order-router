@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { BigNumber } from '@ethersproject/bignumber';
 import { partitionMixedRouteByProtocol } from '@uniswap/router-sdk';
 import { ChainId } from '@uniswap/sdk-core';

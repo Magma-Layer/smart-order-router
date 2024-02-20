@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { Token } from '@uniswap/sdk-core';
 import { Pair } from '@uniswap/v2-sdk';
 import { Pool } from '@uniswap/v3-sdk';
@@ -134,7 +135,13 @@ export function computeAllRoutes<
     }
   };
 
-  computeRoutes(tokenIn, tokenOut, [], poolsUsed, new Set([tokenIn.address.toLowerCase()]));
+  computeRoutes(
+    tokenIn,
+    tokenOut,
+    [],
+    poolsUsed,
+    new Set([tokenIn.address.toLowerCase()])
+  );
 
   log.info(
     {

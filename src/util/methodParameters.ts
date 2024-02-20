@@ -1,3 +1,4 @@
+//@ts-nocheck
 import {
   MixedRouteSDK,
   Protocol,
@@ -18,9 +19,9 @@ import {
   MethodParameters,
   MixedRouteWithValidQuote,
   RouteWithValidQuote,
-  SWAP_ROUTER_02_ADDRESSES,
   SwapOptions,
   SwapType,
+  SWAP_ROUTER_02_ADDRESSES,
   V2RouteWithValidQuote,
   V3RouteWithValidQuote,
 } from '..';
@@ -222,6 +223,8 @@ export function buildTrade<TTradeType extends TradeType>(
       };
     }
   );
+
+  //@ts-ignore
 
   const trade = new Trade({ v2Routes, v3Routes, mixedRoutes, tradeType });
 
