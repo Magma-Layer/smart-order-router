@@ -12,7 +12,6 @@ import { WRAPPED_NATIVE_CURRENCY } from '../../../..';
 import { ProviderConfig } from '../../../../providers/provider';
 import { log } from '../../../../util';
 import { CurrencyAmount } from '../../../../util/amounts';
-import { getV2NativePool } from '../../../../util/gas-factory-helpers';
 import { MixedRouteWithValidQuote } from '../../entities/route-with-valid-quote';
 import {
   BuildOnChainGasModelFactoryType,
@@ -111,14 +110,14 @@ export class MixedRouteHeuristicGasModelFactory extends IOnChainGasModelFactory 
     const nativeV3Pool: Pool | null = pools.nativeQuoteTokenV3Pool;
 
     let nativeV2Pool: Pair | null;
-    if (V2poolProvider) {
-      /// MixedRoutes
-      nativeV2Pool = await getV2NativePool(
-        quoteToken,
-        V2poolProvider,
-        providerConfig
-      );
-    }
+    // if (V2poolProvider) {
+    //   /// MixedRoutes
+    //   nativeV2Pool = await getV2NativePool(
+    //     quoteToken,
+    //     V2poolProvider,
+    //     providerConfig
+    //   );
+    // }
 
     const usdToken =
       usdPool.token0.address == nativeCurrency.address

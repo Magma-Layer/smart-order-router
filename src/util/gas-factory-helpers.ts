@@ -36,12 +36,15 @@ import { buildTrade } from './methodParameters';
 export async function getV2NativePool(
   token: Token,
   poolProvider: IV2PoolProvider,
-  providerConfig?: ProviderConfig,
+  providerConfig?: ProviderConfig
 ): Promise<Pair | null> {
   const chainId = token.chainId as ChainId;
   const weth = WRAPPED_NATIVE_CURRENCY[chainId]!;
 
-  const poolAccessor = await poolProvider.getPools([[weth, token]], providerConfig);
+  const poolAccessor = await poolProvider.getPools(
+    [[weth, token]],
+    providerConfig
+  );
   const pool = poolAccessor.getPool(weth, token);
 
   if (!pool || pool.reserve0.equalTo(0) || pool.reserve1.equalTo(0)) {
@@ -266,6 +269,7 @@ export async function calculateGasUsed(
   chainId: ChainId,
   route: SwapRoute,
   simulatedGasUsed: BigNumber,
+  //@ts-ignore
   v2PoolProvider: IV2PoolProvider,
   v3PoolProvider: IV3PoolProvider,
   l2GasData?: ArbitrumGasData | OptimismGasData,
@@ -319,7 +323,7 @@ export async function calculateGasUsed(
         v3PoolProvider,
         providerConfig
       ),
-      getV2NativePool(quoteToken, v2PoolProvider, providerConfig),
+      // getV2NativePool(quoteToken, v2PoolProvider, providerConfig),
     ]);
     const nativePool = nativePools.find((pool) => pool !== null);
 
