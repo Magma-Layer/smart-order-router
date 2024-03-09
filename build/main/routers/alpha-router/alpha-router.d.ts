@@ -279,7 +279,7 @@ export declare class AlphaRouter implements IRouter<AlphaRouterConfig>, ISwapToR
     protected onChainQuoteProvider: IOnChainQuoteProvider;
     protected v2SubgraphProvider: IV2SubgraphProvider;
     protected v2QuoteProvider: IV2QuoteProvider;
-    protected v2PoolProvider: IV2PoolProvider;
+    v2PoolProvider: IV2PoolProvider;
     protected tokenProvider: ITokenProvider;
     protected gasPriceProvider: IGasPriceProvider;
     protected swapRouterProvider: ISwapRouterProvider;

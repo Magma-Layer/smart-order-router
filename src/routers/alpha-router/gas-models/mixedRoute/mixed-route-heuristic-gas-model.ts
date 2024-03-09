@@ -63,7 +63,7 @@ export class MixedRouteHeuristicGasModelFactory extends IOnChainGasModelFactory 
     IGasModel<MixedRouteWithValidQuote>
   > {
     const usdPool: Pool = pools.usdPool;
-
+    console.log('buildGasModelpppppppp');
     // If our quote token is WETH, we don't need to convert our gas use to be in terms
     // of the quote token in order to produce a gas adjusted amount.
     // We do return a gas use in USD however, so we still convert to usd.

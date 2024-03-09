@@ -8,7 +8,6 @@ import { ProviderConfig } from '../providers/provider';
 import { ArbitrumGasData, OptimismGasData } from '../providers/v3/gas-data-provider';
 import { IV3PoolProvider } from '../providers/v3/pool-provider';
 import { SwapOptions, SwapRoute } from '../routers';
-export declare function getV2NativePool(token: Token, poolProvider: IV2PoolProvider, providerConfig?: ProviderConfig): Promise<Pair | null>;
 export declare function getHighestLiquidityV3NativePool(token: Token, poolProvider: IV3PoolProvider, providerConfig?: ProviderConfig): Promise<Pool | null>;
 export declare function getHighestLiquidityV3USDPool(chainId: ChainId, poolProvider: IV3PoolProvider, providerConfig?: ProviderConfig): Promise<Pool>;
 export declare function getGasCostInUSD(usdPool: Pool, costNativeCurrency: CurrencyAmount<Token>): CurrencyAmount<Token>;
