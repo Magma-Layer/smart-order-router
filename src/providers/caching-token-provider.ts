@@ -31,6 +31,7 @@ import {
   USDC_BASE,
   USDC_BNB,
   USDC_ETHEREUM_GNOSIS,
+  USDC_MAGMA_TEST,
   USDC_MAINNET,
   USDC_MOONBEAM,
   USDC_OPTIMISM,
@@ -143,7 +144,11 @@ export const CACHE_SEED_TOKENS: {
   [ChainId.BASE]: {
     USDC: USDC_BASE,
     WETH: WRAPPED_NATIVE_CURRENCY[ChainId.BASE],
-  }
+  },
+  [ChainId.MAGMA_TESTNET]: {
+    USDC: USDC_MAGMA_TEST,
+    WETH: WRAPPED_NATIVE_CURRENCY[ChainId.MAGMA_TESTNET],
+  },
   // Currently we do not have providers for Moonbeam mainnet or Gnosis testnet
 };
 

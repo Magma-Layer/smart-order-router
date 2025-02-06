@@ -473,10 +473,10 @@ export const USDC_BASE = new Token(
 
 export const USDC_MAGMA_TEST = new Token(
   ChainId.MAGMA_TESTNET,
-  '0x816a60a61ba22fc329aabbabef4d2348471d0b77',
+  '0x131761D30a124830AFcF503B84b4184C19596307',
   18,
-  'TANG',
-  'TANG '
+  'USDM',
+  'Magma USD'
 );
 
 // Base Goerli Tokens
@@ -801,6 +801,8 @@ export const USDC_ON = (chainId: ChainId): Token => {
       return USDC_AVAX;
     case ChainId.BASE:
       return USDC_BASE;
+    case ChainId.MAGMA_TESTNET:
+      return USDC_MAGMA_TEST;
     case ChainId.BASE_GOERLI:
       return USDC_BASE_GOERLI;
     default:

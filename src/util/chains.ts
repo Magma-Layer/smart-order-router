@@ -415,7 +415,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
   ),
   [ChainId.MAGMA_TESTNET]: new Token(
     ChainId.MAGMA_TESTNET,
-    '0xa653eef72d5141e4c3c6c8b66f66e6a42af85958',
+    '0x31eb8cB8023a4Cc70f4b0788a197bc5324af846C',
     18,
     'WLAVA',
     'Wrapped LAVA'

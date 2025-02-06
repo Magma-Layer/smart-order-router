@@ -67,6 +67,11 @@ export const BASES_TO_CHECK_TRADES_AGAINST = (
       DAI_AVAX,
     ],
     [ChainId.BASE]: [WRAPPED_NATIVE_CURRENCY[ChainId.BASE]!, USDC_BASE],
+    // [ChainId.MAGMA_TESTNET]: [
+    //   WRAPPED_NATIVE_CURRENCY[ChainId.BASE]!,
+    //   USDC_MAGMA_TEST,
+    // ],
+
     [ChainId.BASE_GOERLI]: [WRAPPED_NATIVE_CURRENCY[ChainId.BASE_GOERLI]!],
     [ChainId.OPTIMISM_SEPOLIA]: [],
     [ChainId.ARBITRUM_SEPOLIA]: [],

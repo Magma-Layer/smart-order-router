@@ -294,7 +294,7 @@ exports.WRAPPED_NATIVE_CURRENCY = {
     [sdk_core_1.ChainId.AVALANCHE]: new sdk_core_1.Token(sdk_core_1.ChainId.AVALANCHE, '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7', 18, 'WAVAX', 'Wrapped AVAX'),
     [sdk_core_1.ChainId.BASE]: new sdk_core_1.Token(sdk_core_1.ChainId.BASE, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
     [sdk_core_1.ChainId.BASE_GOERLI]: new sdk_core_1.Token(sdk_core_1.ChainId.BASE_GOERLI, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
-    [sdk_core_1.ChainId.MAGMA_TESTNET]: new sdk_core_1.Token(sdk_core_1.ChainId.MAGMA_TESTNET, '0xa653eef72d5141e4c3c6c8b66f66e6a42af85958', 18, 'WLAVA', 'Wrapped LAVA'),
+    [sdk_core_1.ChainId.MAGMA_TESTNET]: new sdk_core_1.Token(sdk_core_1.ChainId.MAGMA_TESTNET, '0x31eb8cB8023a4Cc70f4b0788a197bc5324af846C', 18, 'WLAVA', 'Wrapped LAVA'),
     [sdk_core_1.ChainId.ARBITRUM_SEPOLIA]: new sdk_core_1.Token(sdk_core_1.ChainId.ARBITRUM_SEPOLIA, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
     [sdk_core_1.ChainId.OPTIMISM_SEPOLIA]: new sdk_core_1.Token(sdk_core_1.ChainId.OPTIMISM_SEPOLIA, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
 };

@@ -6,6 +6,7 @@ import { WRAPPED_NATIVE_CURRENCY } from '../../util/chains';
 import { log } from '../../util/log';
 import {
   DAI_MAINNET,
+  USDC_MAGMA_TEST,
   USDC_MAINNET,
   USDT_MAINNET,
   WBTC_MAINNET,
@@ -27,7 +28,10 @@ const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ],
   [ChainId.GOERLI]: [WRAPPED_NATIVE_CURRENCY[ChainId.GOERLI]!],
   [ChainId.SEPOLIA]: [WRAPPED_NATIVE_CURRENCY[ChainId.SEPOLIA]!],
-  [ChainId.MAGMA_TESTNET]: [WRAPPED_NATIVE_CURRENCY[ChainId.MAGMA_TESTNET]!],
+  [ChainId.MAGMA_TESTNET]: [
+    WRAPPED_NATIVE_CURRENCY[ChainId.MAGMA_TESTNET]!,
+    USDC_MAGMA_TEST,
+  ],
 
   //v2 not deployed on [optimism, arbitrum, polygon, celo, gnosis, moonbeam, bnb, avalanche] and their testnets
   [ChainId.OPTIMISM]: [],
